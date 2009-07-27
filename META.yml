@@ -1,0 +1,30 @@
+---
+name: Task-FreecellSolver-Testing
+version: v0.0.1
+author:
+  - 'Shlomi Fish <shlomif@iglu.org.il>'
+abstract: |-
+  install the CPAN dependencies of the
+  Freecell Solver test suite.
+license: mit
+resources:
+  license: http://www.opensource.org/licenses/mit-license.php
+build_requires:
+  Test::More: 0
+requires:
+  Games::Solitaire::Verify: 0
+  String::ShellQuote: 0
+  Task::Test::Run::AllPlugins: 0
+  Template: 0
+  Test::Differences: 0
+  YAML::XS: ~
+configure_requires:
+  Module::Build: 0.34
+provides:
+  Task::FreecellSolver::Testing:
+    file: lib/Task/FreecellSolver/Testing.pm
+    version: v0.0.1
+generated_by: Module::Build version 0.34
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
