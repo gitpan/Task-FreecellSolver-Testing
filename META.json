@@ -1,10 +1,10 @@
 {
    "abstract" : "install the CPAN dependencies of the",
    "author" : [
-      "Shlomi Fish <shlomif@iglu.org.il>"
+      "Shlomi Fish <shlomif@shlomifish.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.3901, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830",
    "license" : [
       "mit"
    ],
@@ -21,7 +21,7 @@
       },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.39"
+            "Module::Build" : "0.36"
          }
       },
       "runtime" : {
@@ -49,6 +49,7 @@
             "YAML::XS" : "0",
             "base" : "0",
             "lib" : "0",
+            "perl" : "5.008",
             "strict" : "0",
             "warnings" : "0"
          }
@@ -57,7 +58,7 @@
    "provides" : {
       "Task::FreecellSolver::Testing" : {
          "file" : "lib/Task/FreecellSolver/Testing.pm",
-         "version" : "v0.0.3"
+         "version" : "v0.0.4"
       }
    },
    "release_status" : "stable",
@@ -66,5 +67,5 @@
          "http://www.opensource.org/licenses/mit-license.php"
       ]
    },
-   "version" : "v0.0.3"
+   "version" : "v0.0.4"
 }

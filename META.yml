@@ -1,13 +1,13 @@
 ---
 abstract: 'install the CPAN dependencies of the'
 author:
-  - 'Shlomi Fish <shlomif@iglu.org.il>'
+  - 'Shlomi Fish <shlomif@shlomifish.org>'
 build_requires:
   Test::More: 0
 configure_requires:
-  Module::Build: 0.39
+  Module::Build: 0.36
 dynamic_config: 1
-generated_by: 'Module::Build version 0.3901, CPAN::Meta::Converter version 2.120921'
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
 license: mit
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -16,7 +16,7 @@ name: Task-FreecellSolver-Testing
 provides:
   Task::FreecellSolver::Testing:
     file: lib/Task/FreecellSolver/Testing.pm
-    version: v0.0.3
+    version: v0.0.4
 requires:
   Carp: 0
   Cwd: 0
@@ -41,8 +41,9 @@ requires:
   YAML::XS: 0
   base: 0
   lib: 0
+  perl: 5.008
   strict: 0
   warnings: 0
 resources:
   license: http://www.opensource.org/licenses/mit-license.php
-version: v0.0.3
+version: v0.0.4

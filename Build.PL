@@ -5,8 +5,11 @@ use Module::Build;
 my $builder = Module::Build->new(
     module_name         => 'Task::FreecellSolver::Testing',
     license             => 'mit',
-    dist_author         => q{Shlomi Fish <shlomif@iglu.org.il>},
+    dist_author         => q{Shlomi Fish <shlomif@shlomifish.org>},
     dist_version_from   => 'lib/Task/FreecellSolver/Testing.pm',
+    configure_requires => {
+        'Module::Build' => '0.36',
+    },
     requires => {
         "base" => 0,
         "Carp" => 0,
@@ -31,6 +34,7 @@ my $builder = Module::Build->new(
         "Test::Differences" => 0,
         "Test::More" => 0,
         "Test::Run::CmdLine::Plugin::TrimDisplayedFilenames" => 0,
+        "perl" => '5.008',
         "warnings" => 0,
         "YAML::XS" => 0,
     },
