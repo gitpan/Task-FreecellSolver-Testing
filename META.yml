@@ -3,47 +3,63 @@ abstract: 'install the CPAN dependencies of the'
 author:
   - 'Shlomi Fish <shlomif@shlomifish.org>'
 build_requires:
-  Test::More: 0
+  Test::More: '0'
 configure_requires:
-  Module::Build: 0.36
+  Module::Build: '0.36'
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
+generated_by: 'Module::Build version 0.4205, CPAN::Meta::Converter version 2.140640'
+keywords:
+  - bundle
+  - card
+  - cards
+  - freecell
+  - game
+  - games
+  - patience
+  - qa
+  - solitaire
+  - solver
+  - task
+  - testing
 license: mit
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Task-FreecellSolver-Testing
 provides:
   Task::FreecellSolver::Testing:
     file: lib/Task/FreecellSolver/Testing.pm
-    version: v0.0.4
+    version: v0.0.5
 requires:
-  Carp: 0
-  Cwd: 0
-  Data::Dumper: 0
-  Digest::SHA: 0
-  Env::Path: 0
-  File::Path: 0
-  File::Spec: 0
-  Games::Solitaire::Verify: 0
-  Games::Solitaire::Verify::Solution: 0
-  IPC::Open2: 0
-  Inline: 0
-  Inline::C: 0
-  List::MoreUtils: 0
-  Storable: 0
-  String::ShellQuote: 0
-  Task::Test::Run::AllPlugins: 0
-  Template: 0
-  Test::Differences: 0
-  Test::More: 0
-  Test::Run::CmdLine::Plugin::TrimDisplayedFilenames: 0
-  YAML::XS: 0
-  base: 0
-  lib: 0
-  perl: 5.008
-  strict: 0
-  warnings: 0
+  Carp: '0'
+  Cwd: '0'
+  Data::Dumper: '0'
+  Digest::SHA: '0'
+  Env::Path: '0'
+  File::Path: '0'
+  File::Spec: '0'
+  Games::Solitaire::Verify: '0'
+  Games::Solitaire::Verify::Solution: '0'
+  IPC::Open2: '0'
+  Inline: '0'
+  Inline::C: '0'
+  List::MoreUtils: '0'
+  MooX: '0'
+  MooX::late: '0'
+  Storable: '0'
+  String::ShellQuote: '0'
+  Task::Test::Run::AllPlugins: '0'
+  Template: '0'
+  Test::Differences: '0'
+  Test::More: '0'
+  Test::Run::CmdLine::Plugin::TrimDisplayedFilenames: '0'
+  YAML::XS: '0'
+  base: '0'
+  lib: '0'
+  perl: '5.008'
+  strict: '0'
+  warnings: '0'
 resources:
-  license: http://www.opensource.org/licenses/mit-license.php
-version: v0.0.4
+  license: http://opensource.org/licenses/mit-license.php
+  repository: https://bitbucket.org/shlomif/fc-solve
+version: v0.0.5

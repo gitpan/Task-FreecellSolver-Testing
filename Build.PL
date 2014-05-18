@@ -1,8 +1,10 @@
 use strict;
 use warnings;
-use Module::Build;
+use lib './inc';
 
-my $builder = Module::Build->new(
+use Test::Run::Builder;
+
+my $builder = Test::Run::Builder->new(
     module_name         => 'Task::FreecellSolver::Testing',
     license             => 'mit',
     dist_author         => q{Shlomi Fish <shlomif@shlomifish.org>},
@@ -26,6 +28,8 @@ my $builder = Module::Build->new(
         "IPC::Open2" => 0,
         "lib" => 0,
         "List::MoreUtils" => 0,
+        "MooX" => 0,
+        "MooX::late" => 0,
         "Storable" => 0,
         "strict" => 0,
         "String::ShellQuote" => 0,
@@ -43,6 +47,28 @@ my $builder = Module::Build->new(
     },
     add_to_cleanup      => [ 'Task-FreecellSolver-Testing-*' ],
     create_makefile_pl => 'traditional',
+    meta_merge =>
+    {
+        resources =>
+        {
+            repository => "https://bitbucket.org/shlomif/fc-solve",
+        },
+        keywords =>
+        [
+            "bundle",
+            "card",
+            "cards",
+            "freecell",
+            "game",
+            "games",
+            "patience",
+            "qa",
+            "solitaire",
+            "solver",
+            "task",
+            "testing",
+        ],
+    },
 );
 
 $builder->create_build_script();
